@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  margin: 0 auto;
+}
+.fixed {
+  position: fixed;
+  z-index: 2;
+}
+.no-padding {
+  padding: 0;
+}
+body {
+  background: #000;
+}
+.top-line {
+  height: 50px;
+  background: #333333;
+  margin: 0 auto;
+}
+.top-line form label {
+  line-height: 50px;
+  color: #777777;
+}
+.top-line form select {
+  background: none;
+  border: none;
+  color: #777777;
+}
+.top-line form select option {
+  background: #333333;
+  border: none;
+  margin: 0;
+}
+.top-line form button {
+  line-height: 50px;
+  background: none;
+  border: none;
+  color: #999999;
+}
+.wrapper {
+  background: #fff;
+  height: 100vh;
+  margin: 0 auto;
+}

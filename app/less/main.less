@@ -1,0 +1,66 @@
+@TopLineColor: #333333;
+@CurrencyColor: #777777;
+@TopLineButtonColor: #999999;
+
+@top-line-height: 50px;
+@top-line-lineheight: @top-line-height;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.center {
+	margin: 0 auto;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 2;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+body {
+	background: #000;
+}
+
+.top-line {
+	height: @top-line-height;
+	background: @TopLineColor;
+	margin: 0 auto;
+	form {
+		label {
+			line-height: @top-line-lineheight;
+			color: @CurrencyColor;
+		}
+		select {
+			background: none;
+			border: none;
+			color: @CurrencyColor;
+			option {
+				background: @TopLineColor;
+				border: none;
+				margin: 0;
+			}
+		}
+		button {
+			line-height: @top-line-lineheight;
+			background: none;
+			border: none;
+			color: @TopLineButtonColor;
+		}
+	}
+}
+
+.wrapper {
+	background: #fff;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+
+
