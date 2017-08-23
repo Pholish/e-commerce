@@ -7,6 +7,10 @@
 	<title>DOCTYPE</title>
 	
 	<!-- 	normalize css start    -->
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- 	normalize css end    -->
+	
+	<!-- 	normalize css start    -->
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!-- 	normalize css end    -->
 		
@@ -22,13 +26,23 @@
    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<!-- 	bootstrap theme css end    -->
 	
+	<!-- 	slick-slider css	start 	-->
+   <link rel="stylesheet" type="text/css" href="css/slick.css">
+   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<!-- 	slick-slider css finish 	-->
+	
+	<!-- 	hover css start    -->
+   <link href="css/hover-min.css" rel="stylesheet" type="text/css" media="all">
+	<!-- 	hover css end    -->
+	
 	<!-- 	main css	start 	-->
    <link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- 	main css finish 	-->
+
 		
 </head>
 <body>
-	<div class="top-line fixed container-fluid col-xs-12">
+	<section class="top-line fixed container-fluid col-xs-12">
 		<div class="row">
 			<div class="center container">
 			 <div class="row">
@@ -44,35 +58,76 @@
 				</div>
 				<div class="pull-left col-xs-6 no-padding"></div>
 				<div class="pull-left col-xs-4 no-padding">
-					<form method="get">
-						<button type="button">Register</button>
-						<button type="button">Sing In</button>
-						
-					</form>
+					<a class="register hvr-rectangle-in" href="#">Register</a>
+					<a class="sign_in hvr-rectangle-in" href="#">Sign In</a>
+					<a class="pull-right cart hvr-rectangle-in" href="#">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						empty
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
 				</div>
 			</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--	wrapper start	-->
-	<div class="wrapper container">
+	<section class="wrapper container-fluid">
 		<!--	header start	-->
-		<header>
-				
+		<header class="container-fluid relative">
+			<div class="absolute container-fluid navigation_container">
+				<div class="logo pull-left col-md-offset-1 col-md-2"><span>Avenue</span>Fashion</div>
+				<div class="navigation_block pull-left col-md-offset-2 col-md-5">
+					<ul class="navigation">
+						<li class="navigation_item parent"><a href="#">Men's <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+						<li class="navigation_item parent"><a href="#">Woman's <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+						<li class="navigation_item parent"><a href="#">The Brand</a></li>
+						<li class="navigation_item parent"><a href="#">Local Stores <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+						<li class="navigation_item parent"><a href="#">Look Book <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			<div class="search-block pull-left col-xs-2 relative">
+				<form method="get" class="col-xs-12 no-padding">
+					<input class="search-field col-xs-offset-2 col-xs-8 pull-left" placeholder="Search." type="text">
+					<input class="submit-field col-xs-2 pull-left" type="Submit" placeholder="">
+					<i class="fa fa-search absolute" aria-hidden="true"></i>
+				</form>
+			</div>
+			</div>
+			<div class="row">
+				<div class="slider">
+					<div class="relative">
+						<img class="img-responsive" src="img/1-Home.jpg" alt="">
+						<div class="absolute slide_discription">
+							<h1 class="slogan">A  V  E</h1>
+							<a class="slide_button_collection hvr-sweep-to-top" href="">Shop Woman's Collection</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 		<!--	header end 		-->
 		<!--	content start	-->
-		<div class="content">
-			
-		</div>
+		<section class="content section-goods">
+			<div class="content container section-goods__links">
+				<div class="row">
+					<ul class="goods__links col-md-6">
+						<li class="popular"><a href="">popular</a></li>
+						<li class="new_arrivals"><a href="">new arrivals</a></li>
+						<li class="best_sallers"><a href="">best sallers</a></li>
+						<li class="special_offers"><a href="">special offers</a></li>
+						<li class="comming_soon"><a href="">comming soon</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		<!--	content end  	-->
 		<!--	footer start	-->
 		<footer>
 			
 		</footer>
 		<!--	footer end 		-->
-	</div>
+	</section>
 	
  	<!--	wrapper end	-->
  	<!--	start	libs min 	-->

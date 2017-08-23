@@ -31,7 +31,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('scripts', ['animate'] , function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
-		'app/libs/wow/dist/wow.min.js'// Берем wow
+		'app/libs/wow/dist/wow.min.js', // Берем wow
+		'app/libs/slick-carousel/slick/slick.min.js' //Берем slick-slider
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -45,8 +46,13 @@ gulp.task('css-libs', ['less'], function() {
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('animate', ['bootstrap'], function() {
+gulp.task('animate', ['bootstrap', 'slick-slider'], function() {
 	return gulp.src('app/libs/wow/css/libs/animate.css') // Выбираем файл для минификации
+		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
+});
+
+gulp.task('slick-slider', function() {
+	return gulp.src(['app/libs/slick-carousel/slick/slick.css','app/libs/slick-carousel/slick/slick-theme.css']) // Выбираем файл для минификации
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
